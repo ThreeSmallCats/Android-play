@@ -1,0 +1,104 @@
+@import "../reset/reset.less";
+.p-nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 1s;
+  &.active{
+      right: -100px;
+    }
+  .out-nav{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: @red;
+    transition: all 1s;
+    z-index: 100;
+    box-shadow: @shadowa;
+    
+    i{
+      text-align: center;
+      color: @white;
+      font-size: 1.5em;
+    }
+    &.active{
+      bottom:50%;
+      right: 50%;
+      transform: translate(50%,50%);
+      z-index: 100;
+    }
+  }
+  .ul-item{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    transition: all 1s;
+    z-index: 99;
+    &.active{
+      bottom:50%;
+      right: 50%;
+      transform: translate(50%,50%);
+    }
+    li{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 50%;
+      color:@white;
+      background-color: @red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 1s;
+      z-index: 98;
+      &.active{
+
+        &#index{
+          top:-120px;
+          left: 0;
+        }
+        &#system{
+          top:-30px;
+          left: -100px;
+        }
+        &#weChat{
+          top: 65px;
+          left: -65px;
+        }
+        &#project{
+          top:-30px;
+          left: 100px;
+        }
+        &#navigation{
+          top: 65px;
+          left: 65px;
+        }
+      }
+    }
+  }
+  .mark{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: @mark;
+    z-index: 13;
+    }
+}
+.show-enter-active, .show-leave-active {
+  transition: all 1s;
+}
+.show-enter, .show-leave-to {
+  opacity: 0;
+}

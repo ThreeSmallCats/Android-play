@@ -1,0 +1,68 @@
+@import "../reset/reset.less";
+.p-index{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom:0;
+  right: 0;
+  background-color: @gray;
+  overflow: auto;
+  transition: all 1s;
+  .banner{
+    width: 100%;
+    background-color: green;
+    overflow: auto;
+    .img-box{
+      width: 700%;
+      font-size: 0;
+      img{
+        width: 14.28%;
+      }
+    }
+  }
+  .index-list{
+    width: 100%;
+    height: 1000px;
+    background-color: @gray;
+    box-sizing: border-box;
+    padding: 10px;
+    ul{
+      width: 100%;
+      li{
+        width: 100%;
+        position: relative;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        box-shadow: @shadow;
+        border-radius: 5px;
+        background-color: @white;
+        span{
+          display: block;
+          font-size: .8em;
+          color:@smallblack;
+          i{
+            color:@red;
+          }
+        }
+        .time{
+          position: absolute;
+          top: 0;
+          right: 10px;
+          line-height: 2;
+          i{
+            font-size: 12px;
+          }
+        }
+        .title{
+          font-size: 1em;
+          color:@black;
+          font-weight: bold;
+        }
+        .classify{
+          padding: 2px;
+        }
+      }
+    }
+  }
+}

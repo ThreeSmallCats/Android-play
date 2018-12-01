@@ -1,0 +1,40 @@
+@import "../reset/reset.less";
+.p-system{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  .system-box{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    li{
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;  
+      box-sizing: border-box;
+      box-shadow: @shadow;
+      border-radius: 5px;
+      background-color: @white;
+      span{
+        display: inline-block;
+        font-size: .8em;
+        color:@smallblack;
+        i{
+          color:@red;
+        }
+      }
+      .title{
+        display: block;
+        font-size: 1em;
+        color: @black;
+        bottom: 10px;
+      }
+      .time{
+        margin-left: 10px;
+      }
+    }
+  }
+}

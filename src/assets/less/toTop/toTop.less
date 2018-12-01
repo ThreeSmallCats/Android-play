@@ -1,0 +1,22 @@
+@import "../reset/reset.less";
+.p-to-top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: @red;
+  transition: all 1s;
+  z-index: 10;
+  box-shadow: @shadowa;
+  &.active{
+    right: -100px;
+  }
+  i{
+    color:@white;
+    font-size: 2em;
+  }
+}

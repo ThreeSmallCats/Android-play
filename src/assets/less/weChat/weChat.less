@@ -1,0 +1,39 @@
+@import "../reset/reset.less";
+.p-weChat{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  .weChat-box{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    li{
+      padding: 5px;
+      background-color: @white;
+      border-radius: 5px;
+      box-shadow: @shadow;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      span{
+        display: inline-block;
+        font-size: .8em;
+        color:@smallblack;
+        i{
+          color:@red;
+        }
+      }
+      .title{
+        display: block;
+        font-size: 1em;
+        color:@black;
+        margin-bottom: 10px;
+      }
+      .time{
+        margin-left: 10px;
+      }
+    }
+  }
+}

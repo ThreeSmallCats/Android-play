@@ -1,0 +1,81 @@
+@import "../reset/reset.less";
+.p-menu{
+  .one{
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+    background-color: @red;
+    box-sizing: border-box;
+    overflow: auto;
+    transition: all 1s;
+    z-index: 12;
+    &.active{
+      right:10px;
+    }
+    li{
+      width: 100%;
+      color:@white;
+      padding: 5px;
+      box-sizing: border-box;
+      &.active{
+        background-color: @Ared;
+      }
+    }
+  }
+  .two{
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    top:50%;
+    right: 140px;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: @red;
+    z-index: 12;
+    li{
+      width: 100%;
+      color: @white;
+      padding: 2px;
+      box-sizing: border-box;
+      &.active{
+        background-color: @Ared;
+      }
+    }
+  }
+  .mark{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    background-color: @mark;
+    z-index: 10;
+    }
+}
+
+.oneBox-enter,.oneBox-leave-to{
+  right: 10px;
+  opacity: 0;
+}
+.oneBox-enter-active,.oneBox-leave-active{
+  transition: all .1s;
+}
+
+.marks-enter,.marks-leave-to{
+  opacity: 0;
+}
+.marks-enter-active,.marks-leave-active{
+  transition: all 1s;
+}
+
+.show-enter,.show-leave-to{
+  opacity: 0;
+}
+.show-enter-active,.show-leave-active{
+  transition: all 1s;
+}
+
